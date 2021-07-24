@@ -6,8 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
+html {
+    scroll-behavior: initial;
 }
 .max-width{
     max-width: 1300px;
@@ -232,8 +232,8 @@ section .title::after{
 
 /* services section styling */
 .services, .projects{
-    color:#fff;
-    background: #111;
+    background:#222;
+    color: #fff;
 }
 .services .title::before,
 .projects .title::before{
@@ -242,20 +242,24 @@ section .title::after{
 
 .services .title::after,
 .projects .title::after{
-    background: #111;
-    content:"What i provide"
+    background: #222;
+    content:"current projects"
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: none;
+    color: white;
     text-align: center;
+    font-family:Didot, serif;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 20px 25px; 
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover{
-    background: #854C27;
+   background:  #854C27;
+   color: #fff;
 }
 
 .services .serv-content .card .box{
@@ -265,19 +269,27 @@ section .title::after{
     transform: scale(1.05);
 }
 
-.services .serv-content .card i{
-    font-size: 50px;
-    color: #854C27;
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-
 .services .serv-content .card text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+.services .serv-content a{
+    display: inline-block;
+    background: #222;
+    color: #854C27;
+    font-size: 25px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-family: 'Shadows Into Light', cursive;
+    border: 2px solid #222;
+    transition: all 0.3s ease;
+}
+.services .serv-content a:hover{
+    transform: scale(1.05);
+    background: none;
+    color: #222;
 }
 
 /* skills section styling */
@@ -363,6 +375,7 @@ section .title::after{
 
 
 /* projects section styling */
+
 .projects .title::after{
     content: "what i've done";
 }
