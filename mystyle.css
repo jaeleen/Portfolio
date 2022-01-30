@@ -262,7 +262,7 @@ section .title::after{
 .about-me-links:hover{
     color: #e1b555;
 }
-/* services section styling */
+/* Web section styling */
 .services, .projects{
     background:#222;
     color: #fff;
@@ -287,6 +287,9 @@ section .title::after{
     padding: 20px 25px; 
     cursor: pointer;
     transition: all 0.3s ease;
+}
+#as-a-programmer{
+    font-family: 'Shadows Into Light', cursive;
 }
 
 .services .serv-content .card:hover{
