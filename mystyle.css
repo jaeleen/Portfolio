@@ -502,6 +502,11 @@ section .title::after{
     font-size: 25px;
     color: lightskyblue;
 }
+.contact .head{
+    color: #1d0c0a;
+    text-decoration: underline;
+    /* font-weight: 600; */
+}
 .contact .contact-content .row .info .head{
     font-weight: 500;
 }
